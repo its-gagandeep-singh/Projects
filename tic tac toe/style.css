@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("https://media.istockphoto.com/id/1025533834/vector/geometric-seamless-pattern-with-black-triangles-crosses-and-circles-on-white-background.jpg");
+    background-position: center;  
+    background-size: cover;
+    text-align: center;
+    font-family: monospace;
+}
+.headingOne {
+    background-color: rgb(255, 255, 255, 0.9);
+    margin-top: 2vmin;
+    display: inline-block;
+    border: 0.5vmin solid black;
+    padding: 1vmin 10vmin;
+}
+.msg-box {
+    width: 80vmin;
+    height: 25vmin;
+    margin: 1vmin auto;
+    color: black;
+    background-color: white;
+    border-radius: 1.5vmin;
+    font-size: 3.5vmin;
+    color: red;
+    box-shadow: 0 0 8vmin lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hideBox { /* class may remove later */
+    display: none;
+}
+.playAgain-btn {
+    background-color: red;
+    color: white;
+    border: none;
+}
+section { margin: 5.5vmin; }
+.container {     
+    margin: 0 auto; 
+    max-width: 75vmin;
+    height: 60vmin;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+.content {
+    width: 57vmin;
+    height: 57vmin;
+    border: 0.8vmin solid black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5vmin 5vmin 15vmin black;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2.5vmin;
+}
+legend {
+    color : black;
+    font-family: monospace;
+    font-size: 2.5vmin;
+    padding: 0vmin 0.5vmin;
+    background-color: rgba(255, 255, 255, 0.9);   
+    border-radius: 3vmin; 
+}
+#fieldset-bottom {
+    width: 55vmin;
+    padding: 3vmin;
+    border: 0.5vmin solid black;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10vmin;
+    display: flex;
+    justify-content: center;
+}
+#field-set-div {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    width: 30vmin;
+    height: 4.5vmin;
+    font-size: 2.7vmin;
+    border-radius: 1vmin;
+}
+.box {
+    width: 14vmin;
+    background-color: white;
+    height: 14vmin;
+    border-radius: 2vmin;
+    border: none;
+    font-size: 11vmin;
+    text-align: center;
+    box-shadow: 0vmin 0vmin 4.5vmin rgb(0, 0, 0);
+    color: black;
+}
+
