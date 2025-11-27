@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg-form</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            padding-bottom: 75px;
+        }
+        form {
+            width: 950px;
+            height: 1150px;
+            border: 2px solid white; 
+            margin: 75px auto;
+            font-size: 20px;
+        }
+        div {
+            /* border: 2px solid grey; */
+            width: 800px;
+            height: 70px;
+            padding-left: 75px;
+            word-spacing: 6px;
+        }
+        div>input {
+            margin: 0 3px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+
+
+       #d-3 {
+
+       }
+       #d-3>input {
+        padding: 0 80px;
+
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Student Registration Form</h1>
+    <div id="d-1">
+        Student Information : 
+        <input type="text" name="firstname" placeholder="First Name">
+        <input type="text" name="middlename" placeholder="Middle Name">
+        <input type="text" name="lastname" placeholder="Last Name">
+    </div>
+
+    <div id="d-2">
+        Select Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 
+        <select>
+            <option>Select</option>
+            <option>9 - 11</option>
+            <option>11 - 18</option>
+            <option>18 - 24</option>
+            <option>24 - 30</option>
+        </select>
+    </div>
+
+    <div id="d-3">
+        Contact Details : 
+        <input type="number" min="1" max="13" name="number" placeholder="Contact Number">
+        <input type="email" name="email" placeholder="abc@gmail.com">
+    </div>
+
+    <div id="d-4">
+        Location Details : 
+        <input type="text" name="country" placeholder="Country">
+        <input type="text" name="location" placeholder="City">
+        <input type="number" name="code" placeholder="Pin Code">
+    </div>
+
+    <div id="d-5">
+        Choose Course : 
+        <select>
+            <option>Select</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JAVA SCRIPT</option>
+            <option>C PROGRAMMING</option>
+            <option>NODE.JS</option>
+        </select>
+    </div>
+    <div id="d-6">
+        Feedback : 
+        <textarea type="text" name="feedback" placeholder="Share your Feedback"></textarea>
+    </div>
+    
+    <div id="d-box">
+    <button type="reset" name="clear">Reset</button>
+    <button type="submit" name="submit">Submit</button>
+    </div>
+
+    </form>
+</body>
+</html>
