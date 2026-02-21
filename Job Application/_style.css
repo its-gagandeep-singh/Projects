@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+/* for layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+/* for design */
+.box {
+    max-width: 600px;
+    /* height: 700px; */
+    margin: 0 auto;
+    background-color: white;
+    /* border: 2px solid red; */
+}
+
+.title {
+    text-align: center;
+}
+/* this flex properties will apply to all same class div's */
+.group {
+    display: flex;
+    flex-direction: row;
+    
+}
