@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change mode</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: inter;
+      }
+      #btn, #reset, #manual {
+        /* width: 29%;
+        height: 50%; */
+
+        width: 8vmin;
+        height: 3vmin;
+
+        font-family: inter;
+        border: 1px solid black;
+        border-radius: 15px;
+        /* position: absolute;
+        top: 2%;
+        right: 2%; */
+        padding: 2px 3%;
+        font-size: 70%;
+      }
+
+      /*
+      #reset {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+      }
+      #manual {
+        top: 8%;
+        right: 2%;
+      }
+       */
+
+      #color-panel {
+        border: 2px solid black;
+        position: absolute;
+        right: 0;
+
+        width: 200px;
+        height: 40px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="color-panel">
+      <button id="btn">CLICK</button>
+      <button id="reset">RESET</button>
+      <button id="manual">MANUAL</button>
+    </div>
+
+    <script>
+      let counter = 0;
+      const btn = document.getElementById("btn");
+      const reset = document.getElementById("reset");
+      const manual = document.getElementById("manual");
+
+      const colors = [
+        "#FFDFD3",
+        "#FFE8A3",
+        "#D8F3DC",
+        "#CAF0F8",
+        "#E4C1F9",
+        "#FFD6E0",
+        "#FFFFFF",
+      ];
+      reset.addEventListener("click", () => {
+        counter = 0;
+        document.body.style.backgroundColor = "white";
+      });
+
+      btn.addEventListener("click", () => {
+        document.body.style.backgroundColor = colors[counter++];
+        if (counter >= colors.length) {
+          counter = 0;
+          document.body.style.backgroundColor = "white";
+        }
+      });
+
+      manual.addEventListener("click", () => {
+        let input = prompt("Enter a valid color : ");
+        if (input) {
+          document.body.style.backgroundColor = input;
+        } else {
+          alert("Invalid Input");
+        }
+      });
+
+      /*
+        let counter = 0;
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            counter++;
+
+            if(counter == 1) {
+                document.body.style.backgroundColor="#FF0000";
+            } else if(counter == 2) {
+                document.body.style.backgroundColor="#FFD700";
+            } else if(counter == 3) {
+                document.body.style.backgroundColor="#7FFF00";
+            } else if(counter == 4) {
+                document.body.style.backgroundColor="#20B2AA";
+            } else if(counter == 5) {
+                document.body.style.backgroundColor="#87CEEB";
+            } else if(counter == 6) {
+                document.body.style.backgroundColor="#FF00FF";
+            } else {
+                document.body.style.backgroundColor="white";
+                counter = 0;
+            }
+        });
+*/
+    </script>
+  </body>
+</html>
