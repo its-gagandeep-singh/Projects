@@ -4,22 +4,55 @@
 }
 
 body {
-    /* background-color: lightblue; */
-    /* background-color: royalblue; */
-    /* background-color: lightcoral; */
-    background-color: midnightblue;
-    
-    font-family: inter, sans-serif;
+    background-image: url("https://media.istockphoto.com/id/1025533834/vector/geometric-seamless-pattern-with-black-triangles-crosses-and-circles-on-white-background.jpg");
+
+    background-position: center;  
+    background-size: 50vmin;
     text-align: center;
 }
+
 h1 {
-    margin-top: 1.5vmin;
-}
-section {
-    padding: 2.3vmin;
+    background-color: rgb(255, 255, 255, 0.9);
+    margin-top: 2vmin;
+    display: inline-block;
+    border: 0.3vmin solid black;
+    padding: 0vmin 5vmin;
 }
 
-.container { /* Top most parent */
+section { margin: 6vmin; }
+
+.fieldset-div {
+    /* border: 0.4vmin solid black; */
+    width: 40vmin;
+    height: 20vmin; 
+
+    display: flex;
+    justify-content: center;
+    
+    position: fixed;
+    left: 155vmin;
+    top: 15vmin;
+    
+}
+
+#fieldset-top {
+    background-color: rgba(255, 255, 255, 1);
+
+    border: 0.4vmin solid black;
+    width: 33vmin;
+    height: 15vmin;
+
+    text-align: left;
+    padding-left: 2vmin;
+    color: black;
+
+    line-height: 4.5vmin;
+    font-family: inter;
+    font-size: 2.5vmin;
+}
+
+
+.container {     
     margin: 0 auto; 
     max-width: 75vmin;
     height: 60vmin;
@@ -27,53 +60,41 @@ section {
     display: flex;
     justify-content: center;  
     align-items: center;  
-    /* border: 0.3vmin solid black; */
-    /* border: 2vmin solid white; */
+
 }
 
 .content {
-    /*set according to height as it is smallest from width*/ 
-    width: 55vmin;
-    height: 55vmin;
-    border: 1vmin solid white;
-
-    /* width: 63.4%; 
-    height: 71.3%; */
+    width: 57vmin;
+    height: 57vmin;
+    border: 1vmin solid black;
+    background-color: white;
 
     display: flex;
     flex-wrap: wrap;
-   
     justify-content: center;
     align-content: center;
-    gap: 2.8vmin;
-    
-}
-
-.box {
-    width: 14vmin;
-    height: 14vmin;
-    border-radius: 2vmin;
-    border: none;
-    font-size: 4.5rem;
-    box-shadow: 0vmin 0vmin 2.5vmin rgb(0, 0, 0);
+    gap: 3vmin;
     
 }
 
 legend {
-    color : gold;
+    color : black;
     font-family: monospace;
     font-size: 20px;
-    padding: 0 1.5vmin;
+    padding: 0vmin 0.5vmin;
+    background-color: white;
 }
 
-#field-set {
+#fieldset-bottom {
     width: 60vmin;
-    padding: 2.3vmin;
-    border: 0.5vmin solid white;
-    border-radius: 1.5vmin;
+    padding: 3vmin;
+    border: 0.5vmin solid black;
+    background-color: rgba(255, 255, 255, 0.9);
 
+    border-radius: 1.5vmin;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
+    
 }
 
 #field-set-div {
@@ -87,5 +108,21 @@ legend {
     font-family: monospace;
     width: 24.5vmin;
     height: 3.5vmin;
+
+}
+
+.box {
+    width: 14vmin;
+    height: 14vmin;
+    border-radius: 2vmin;
+    border: none;
+    font-size: 4.5rem;
+    
+    background-color: white;
+    box-shadow: 0vmin 0vmin 2vmin black;
+}
+
+button {
+    background-color: rgba(255, 255, 0, 0.5);
 }
 

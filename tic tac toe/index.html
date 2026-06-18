@@ -1,50 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Tic Tac Toe</h1>
+      <h1>Tic Tac Toe</h1>
     </header>
 
     <main>
+      <!-- <section> -->
+      <!-- change color theme btn -->
+      <!-- </section> -->
 
-    <section>
-        <!-- change color theme btn -->
-    </section>
-
-        <section>
-        <div class="container">
-            <div class="content">
-                <button class="box">X</button>
-                <button class="box">O</button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-            </div>
+      <section>
+        <div class="fieldset-div">
+          <fieldset id="fieldset-top">
+            <legend><h4>Player Names</h4></legend>
+            <h5>Player 1 :</h5>
+            <h5>Player 2 :</h5>
+          </fieldset>
         </div>
-    </section>
-        
-        <section>
-            <div id="field-set-div">
-                <fieldset id="field-set">
-                      <legend>Game Options</legend>
-                         <button id="start" class="buttons">Start</button>
-                         <button id="replay" class="buttons">Replay</button>
-                </fieldset>
-            </div>
-        </section>
-</main>
+      </section>
 
+      <section>
+        <div class="container">
+          <div class="content">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="field-set-div">
+          <fieldset id="fieldset-bottom">
+            <legend><h4>Game Options</h4></legend>
+            <button id="start" class="buttons">Start</button>
+            <button id="reset" class="buttons">Reset</button>
+          </fieldset>
+        </div>
+      </section>
+    </main>
 
     <script src="game.js"></script>
-</body>
+
+  </body>
 </html>
