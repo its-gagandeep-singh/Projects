@@ -1,1 +1,3 @@
-let a = 9;
+const start = document.getElementById("start");
+const replay = document.getElementById("replay");
+
