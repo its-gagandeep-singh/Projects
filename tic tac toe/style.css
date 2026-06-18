@@ -4,20 +4,49 @@
 }
 
 body {
-    /* background-color: lightblue; */
-    /* background-color: royalblue; */
-    /* background-color: lightcoral; */
-    background-color: midnightblue;
-    
-    font-family: inter, sans-serif;
+    background-image: url("https://media.istockphoto.com/id/1025533834/vector/geometric-seamless-pattern-with-black-triangles-crosses-and-circles-on-white-background.jpg");
+    background-position: center;  
+
+
+    background-color: rgb(65, 105, 225);
     text-align: center;
 }
+
 h1 {
-    margin-top: 1.5vmin;
+    margin-top: 2vmin;
+    border: 0.6vmin solid black;
+    display: inline-block;
 }
-section {
-    padding: 2.3vmin;
+
+section { margin: 4vmin; }
+
+.fieldset-div {
+    /* border: 0.4vmin solid black; */
+    width: 40vmin;
+    height: 20vmin; 
+    
+    display: flex;
+    justify-content: center;
+    
+    position: absolute;
+    right: 20vmin;
+  
 }
+
+#fieldset-top {
+    border: 0.4vmin solid black;
+    width: 33vmin;
+    height: 15vmin;
+
+    text-align: left;
+    padding-left: 2vmin;
+    color: black;
+
+    line-height: 4.5vmin;
+    font-family: inter;
+    font-size: 2.5vmin;
+}
+
 
 .container { /* Top most parent */
     margin: 0 auto; 
@@ -35,7 +64,7 @@ section {
     /*set according to height as it is smallest from width*/ 
     width: 55vmin;
     height: 55vmin;
-    border: 1vmin solid white;
+    border: 1vmin solid black;
 
     /* width: 63.4%; 
     height: 71.3%; */
@@ -60,20 +89,23 @@ section {
 }
 
 legend {
-    color : gold;
+    color : black;
     font-family: monospace;
     font-size: 20px;
-    padding: 0 1.5vmin;
+    /* padding: 0 1.5vmin; */
+    padding: 0vmin 0.5vmin;
+
 }
 
-#field-set {
+#fieldset-bottom {
     width: 60vmin;
-    padding: 2.3vmin;
-    border: 0.5vmin solid white;
-    border-radius: 1.5vmin;
+    padding: 3vmin;
+    border: 0.5vmin solid black;
 
+    border-radius: 1.5vmin;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
+    
 }
 
 #field-set-div {

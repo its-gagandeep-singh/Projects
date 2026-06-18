@@ -1,3 +1,13 @@
-const start = document.getElementById("start");
-const replay = document.getElementById("replay");
+
+
+// selecting all buttons inside the tic tac toe
+let boxes = document.querySelectorAll(".box"); 
+// selecting bottom reset button 
+const replay = document.getElementById("reset");
+
+
+
+
+
+
 
