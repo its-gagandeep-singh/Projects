@@ -7,7 +7,8 @@ body {
     background-image: url("https://media.istockphoto.com/id/1025533834/vector/geometric-seamless-pattern-with-black-triangles-crosses-and-circles-on-white-background.jpg");
 
     background-position: center;  
-    background-size: 50vmin;
+    background-size: cover;
+    background-size: 150vmin;
     text-align: center;
 }
 
