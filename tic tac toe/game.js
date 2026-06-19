@@ -118,6 +118,22 @@ const winnerPattern = (pos1, pos2, pos3) => {
 
 
 
+
+
+
+
+
+
+/* 
+    // TO DO 
+
+    1. WHEN THE GAME DRAW THEN WHAT WILL HAPPEN
+    2. DISPLAY OF THE WINNER ON THE SCREEN WHEN THE PLAYER WINS THE GAME
+    
+
+*/
+
+
 // color logic //
 /*
     if(array.innerText === "X") {
