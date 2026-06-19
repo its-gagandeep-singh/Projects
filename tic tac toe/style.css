@@ -23,37 +23,6 @@ h1 {
 
 section { margin: 6vmin; }
 
-.fieldset-div {
-    /* border: 0.4vmin solid black; */
-    width: 40vmin;
-    height: 20vmin; 
-
-    display: flex;
-    justify-content: center;
-    
-    position: fixed;
-    left: 155vmin;
-    top: 15vmin;
-    
-}
-
-#fieldset-top {
-    background-color: rgba(255, 255, 255, 1);
-
-    border: 0.4vmin solid black;
-    width: 33vmin;
-    height: 15vmin;
-
-    text-align: left;
-    padding-left: 2vmin;
-    color: black;
-
-    line-height: 4.5vmin;
-    font-family: inter;
-    font-size: 2.5vmin;
-}
-
-
 .container {     
     margin: 0 auto; 
     max-width: 75vmin;
@@ -70,13 +39,12 @@ section { margin: 6vmin; }
     height: 57vmin;
     border: 1vmin solid black;
     background-color: rgb(255, 255, 255);
-
+    box-shadow: 0.5vmin 5vmin 15vmin black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     gap: 3vmin;
-    
 }
 
 legend {
@@ -84,16 +52,15 @@ legend {
     font-family: monospace;
     font-size: 20px;
     padding: 0vmin 0.5vmin;
-    background-color: white;
+    background-color: white;    
 }
 
 #fieldset-bottom {
-    width: 60vmin;
+    width: 55vmin;
     padding: 3vmin;
     border: 0.5vmin solid black;
     background-color: rgba(255, 255, 255, 0.9);
-
-    border-radius: 1.5vmin;
+    border-radius: 10vmin;
     display: flex;
     justify-content: space-evenly;
     
@@ -106,10 +73,12 @@ legend {
     
 }
 
-.buttons {
+button {
+    background-color: rgba(255, 255, 0, 0.5);
     font-family: monospace;
-    width: 24.5vmin;
-    height: 3.5vmin;
+    width: 30vmin;
+    height: 4.5vmin;
+    border-radius: 0.5vmin;
 
 }
 
@@ -121,10 +90,6 @@ legend {
     font-size: 4.5rem;
     
     background-color: white;
-    box-shadow: 0vmin 0vmin 2vmin black;
-}
-
-button {
-    background-color: rgba(255, 255, 0, 0.5);
+    box-shadow: 0vmin 0vmin 3vmin black;
 }
 
