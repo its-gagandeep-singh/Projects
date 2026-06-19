@@ -69,7 +69,7 @@ section { margin: 6vmin; }
     width: 57vmin;
     height: 57vmin;
     border: 1vmin solid black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
     display: flex;
     flex-wrap: wrap;
