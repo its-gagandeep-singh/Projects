@@ -5,11 +5,9 @@
 
 body {
     background-image: url("https://media.istockphoto.com/id/1025533834/vector/geometric-seamless-pattern-with-black-triangles-crosses-and-circles-on-white-background.jpg");
-
     background-position: center;  
     background-size: cover;
-    background-size: 140vmin;
-
+    background-size: 150vmin;
     text-align: center;
 }
 
@@ -17,7 +15,7 @@ h1 {
     background-color: rgb(255, 255, 255, 0.9);
     margin-top: 2vmin;
     display: inline-block;
-    border: 0.3vmin solid black;
+    border: 0.7vmin solid black;
     padding: 0vmin 5vmin;
 }
 
@@ -27,11 +25,9 @@ section { margin: 6vmin; }
     margin: 0 auto; 
     max-width: 75vmin;
     height: 60vmin;
-    
     display: flex;
     justify-content: center;  
     align-items: center;  
-
 }
 
 .content {
@@ -63,33 +59,30 @@ legend {
     border-radius: 10vmin;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 #field-set-div {
     text-align: left;
     display: flex;
     justify-content: center;
-    
 }
 
 button {
-    background-color: rgba(255, 255, 0, 0.5);
+    background-color: rgba(128, 128, 128, 0.659);
     font-family: monospace;
     width: 30vmin;
     height: 4.5vmin;
     border-radius: 0.5vmin;
-
 }
 
 .box {
     width: 14vmin;
+    background-color: white;
     height: 14vmin;
     border-radius: 2vmin;
     border: none;
-    font-size: 4.5rem;
-    
-    background-color: white;
-    box-shadow: 0vmin 0vmin 3vmin black;
+    font-size: 3.9rem;
+    text-align: center;
+    box-shadow: 0vmin 0vmin 4.5vmin rgb(0, 0, 0);
 }
 
