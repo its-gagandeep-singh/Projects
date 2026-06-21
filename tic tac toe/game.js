@@ -15,16 +15,22 @@ const pattern = [
 
 start()
 
-// click to reset the game
-reset.addEventListener("click", () => {
-    window.location.reload()
-})
+function resetGame() {
+    boxes.forEach((box) => {
+        box.innerText = ""
+        box.style.color = "black"
+        box.style.border = "none"
+        box.style.backgroundColor = "white"
+    })
+    playerValue = true
+    enableButtons() 
+
+}
 
 // click to mark X or O 
 function start() {
     boxes.forEach((box, index) => {
         box.addEventListener("click", function () {
-
             if (box.innerText === "") { // empty value in button //
                 if (playerValue === true) {
                     box.innerText = "X"
@@ -59,7 +65,7 @@ const winner = () => {
             ) {
                 console.log("x is winner")
                 winnerPattern(val[0], val[1], val[2])
-                endOfGame()
+                disableButtons()
                 return;
             }
             else if (pos1.innerText === "O" &&
@@ -68,7 +74,7 @@ const winner = () => {
             ) {
                 console.log("O is winner")
                 winnerPattern(val[0], val[1], val[2])
-                endOfGame()
+                disableButtons()
                 return;
             }
         }
@@ -76,10 +82,18 @@ const winner = () => {
 }
 
 // to stop marking x or o after finding the winner
-function endOfGame() {
+function disableButtons() {
     for (let box of boxes) {
         if (box.textContent === "") {
             box.disabled = true; // disabled button 
+        }
+    }
+}
+
+function enableButtons() {
+    for (let box of boxes) {
+        if (box.textContent === "") {
+            box.disabled = false; // disabled button 
         }
     }
 }
@@ -100,8 +114,8 @@ const winnerPattern = (pos1, pos2, pos3) => {
 
 }
 
-
-
+// reset the values in the cells
+reset.addEventListener("click", resetGame)
 
 
 
