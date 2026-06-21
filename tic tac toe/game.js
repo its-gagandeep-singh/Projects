@@ -16,22 +16,22 @@ const pattern = [
 start()
 
 function resetGame() {
+    click = 1
+    enableButtons()
     boxes.forEach((box) => {
         box.innerText = ""
         box.style.color = "black"
         box.style.border = "none"
         box.style.backgroundColor = "white"
     })
-    playerValue = true
-    enableButtons() 
-
 }
 
 // click to mark X or O 
+let click = 1
 function start() {
     boxes.forEach((box, index) => {
         box.addEventListener("click", function () {
-            if (box.innerText === "") { // empty value in button //
+            if (box.innerText === "") { /* check empty value in button */
                 if (playerValue === true) {
                     box.innerText = "X"
                     playerValue = false
@@ -42,13 +42,15 @@ function start() {
                     }
                 }
                 winner()
+                isDraw(click)
+                click++
             }
         })
     })
 }
 
-// find who won the game
-const winner = () => {
+// to find winner
+function winner() {
     for (let val of pattern) {
 
         let pos1 = boxes[val[0]];
@@ -66,7 +68,6 @@ const winner = () => {
                 console.log("x is winner")
                 winnerPattern(val[0], val[1], val[2])
                 disableButtons()
-                return;
             }
             else if (pos1.innerText === "O" &&
                 pos2.innerText === "O" &&
@@ -75,10 +76,17 @@ const winner = () => {
                 console.log("O is winner")
                 winnerPattern(val[0], val[1], val[2])
                 disableButtons()
-                return;
             }
         }
     }
+}
+
+function isDraw(click) {
+    if(click === 9) {
+        disableButtons()
+        console.log("Draw")
+    }
+    
 }
 
 // to stop marking x or o after finding the winner
@@ -90,6 +98,7 @@ function disableButtons() {
     }
 }
 
+// enable buttons to replay
 function enableButtons() {
     for (let box of boxes) {
         if (box.textContent === "") {
@@ -99,7 +108,7 @@ function enableButtons() {
 }
 
 // pattern where the winner is found
-const winnerPattern = (pos1, pos2, pos3) => {
+function winnerPattern(pos1, pos2, pos3) {
     boxes[pos1].style.color = "red"
     boxes[pos2].style.color = "red"
     boxes[pos3].style.color = "red"
@@ -131,18 +140,12 @@ reset.addEventListener("click", resetGame)
 
 
 
-
-
-
-
-
-
-/* 
-    // TO DO 
+/*
+    // TO DO
 
     1. WHEN THE GAME DRAW THEN WHAT WILL HAPPEN
     2. DISPLAY OF THE WINNER ON THE SCREEN WHEN THE PLAYER WINS THE GAME
-    
+
 
 */
 
