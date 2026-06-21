@@ -131,7 +131,6 @@ reset.addEventListener("click", resetGame)
 
 
 
-
 // color logic //
 /*
     if(array.innerText === "X") {
