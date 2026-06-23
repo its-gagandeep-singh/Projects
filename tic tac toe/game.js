@@ -82,7 +82,7 @@ function winner() {
 }
 
 function isDraw(click) {
-    if(click === 9) {
+    if(click >= 9) {
         disableButtons()
         console.log("Draw")
     }
@@ -113,9 +113,9 @@ function winnerPattern(pos1, pos2, pos3) {
     boxes[pos2].style.color = "red"
     boxes[pos3].style.color = "red"
 
-    boxes[pos1].style.border = "0.4vmin solid red"
-    boxes[pos2].style.border = "0.4vmin solid red"
-    boxes[pos3].style.border = "0.4vmin solid red"
+    boxes[pos1].style.border = "0.3vmin solid red"
+    boxes[pos2].style.border = "0.3vmin solid red"
+    boxes[pos3].style.border = "0.3vmin solid red"
 
     boxes[pos1].style.backgroundColor = "black"
     boxes[pos2].style.backgroundColor = "black"
