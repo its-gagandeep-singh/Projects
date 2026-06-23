@@ -15,7 +15,6 @@ const pattern = [
 
 start()
 
-/* to restart the game when winner is found */
 function playAgain() {
     const playAgain = document.querySelector(".playAgain-btn")
     playAgain.addEventListener("click", () => {
@@ -107,10 +106,17 @@ function displayWinnerO() {
     playAgain()
 }
 
+function displayDraw() {
+    document.querySelector(".msg-box").classList.remove("hideBox")
+    paragraph.innerText = "This Game is a Draw !"
+    playAgain()
+}
+
+/* Check if game is dray */
 function isDraw(click) {
     if (click == 9) {
         disableButtons()
-        console.log("Draw")
+        displayDraw()
     }
 }
 
