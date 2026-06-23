@@ -157,3 +157,5 @@ function winnerPattern(pos1, pos2, pos3) {
 reset.addEventListener("click", () => {
     resetGame()
 })
+
+

@@ -7,7 +7,6 @@ body {
     background-image: url("https://media.istockphoto.com/id/1025533834/vector/geometric-seamless-pattern-with-black-triangles-crosses-and-circles-on-white-background.jpg");
     background-position: center;  
     background-size: cover;
-    background-size: 150vmin;
     text-align: center;
     font-family: monospace;
 }
@@ -29,7 +28,7 @@ body {
     color: black;
     background-color: white;
     border-radius: 1.5vmin;
-    font-size: 30px;
+    font-size: 3.5vmin;
     color: red;
     box-shadow: 0 0 8vmin lightcoral;
     display: flex;
@@ -77,7 +76,7 @@ section { margin: 5.5vmin; }
 legend {
     color : black;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 2.5vmin;
     padding: 0vmin 0.5vmin;
     background-color: rgba(255, 255, 255, 0.9);   
     border-radius: 3vmin; 
@@ -106,7 +105,7 @@ button {
     font-family: monospace;
     width: 30vmin;
     height: 4.5vmin;
-    font-size: 20px;
+    font-size: 2.7vmin;
     border-radius: 1vmin;
 }
 
@@ -116,7 +115,7 @@ button {
     height: 14vmin;
     border-radius: 2vmin;
     border: none;
-    font-size: 4.5rem;
+    font-size: 11vmin;
     text-align: center;
     box-shadow: 0vmin 0vmin 4.5vmin rgb(0, 0, 0);
     color: black;
