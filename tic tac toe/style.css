@@ -9,17 +9,47 @@ body {
     background-size: cover;
     background-size: 150vmin;
     text-align: center;
+    font-family: monospace;
 }
 
-h1 {
+
+
+.headingOne {
     background-color: rgb(255, 255, 255, 0.9);
     margin-top: 2vmin;
     display: inline-block;
-    border: 0.7vmin solid black;
-    padding: 0vmin 5vmin;
+    border: 0.5vmin solid black;
+    padding: 1vmin 10vmin;
 }
 
-section { margin: 6vmin; }
+.msg-box {
+    width: 80vmin;
+    height: 25vmin;
+    margin: 1vmin auto;
+    color: black;
+    background-color: white;
+    border-radius: 1.5vmin;
+    font-size: 30px;
+    color: red;
+    box-shadow: 0 0 8vmin lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideBox { /* class may remove later */
+    display: none;
+}
+
+
+.playAgain-btn {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+section { margin: 5.5vmin; }
 
 .container {     
     margin: 0 auto; 
@@ -33,14 +63,15 @@ section { margin: 6vmin; }
 .content {
     width: 57vmin;
     height: 57vmin;
-    border: 1vmin solid black;
+    border: 0.8vmin solid black;
     background-color: rgb(255, 255, 255);
     box-shadow: 0.5vmin 5vmin 15vmin black;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    gap: 3vmin;
+    gap: 2.5vmin;
 }
 
 legend {
@@ -48,7 +79,8 @@ legend {
     font-family: monospace;
     font-size: 20px;
     padding: 0vmin 0.5vmin;
-    background-color: white;    
+    background-color: rgba(255, 255, 255, 0.9);   
+    border-radius: 3vmin; 
 }
 
 #fieldset-bottom {
@@ -58,21 +90,24 @@ legend {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10vmin;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #field-set-div {
     text-align: left;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 button {
-    background-color: rgba(128, 128, 128, 0.659);
+    background-color: black;
+    color: white;
     font-family: monospace;
     width: 30vmin;
     height: 4.5vmin;
-    border-radius: 0.5vmin;
+    font-size: 20px;
+    border-radius: 1vmin;
 }
 
 .box {
@@ -81,8 +116,9 @@ button {
     height: 14vmin;
     border-radius: 2vmin;
     border: none;
-    font-size: 3.9rem;
+    font-size: 4.5rem;
     text-align: center;
     box-shadow: 0vmin 0vmin 4.5vmin rgb(0, 0, 0);
+    color: black;
 }
 

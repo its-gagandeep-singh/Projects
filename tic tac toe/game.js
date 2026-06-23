@@ -1,6 +1,6 @@
 const boxes = document.querySelectorAll(".box")
-const reset = document.getElementById("reset");
-let playerValue = true; // X
+const reset = document.getElementById("reset")
+let playerValue = true;
 
 const pattern = [
     [0, 1, 2],
@@ -15,18 +15,28 @@ const pattern = [
 
 start()
 
+/* to restart the game when winner is found */
+function playAgain() {
+    const playAgain = document.querySelector(".playAgain-btn")
+    playAgain.addEventListener("click", () => {
+        document.querySelector(".msg-box").classList.add("hideBox")
+        resetGame()
+    })
+}
+
 function resetGame() {
     click = 1
-    enableButtons()
     boxes.forEach((box) => {
         box.innerText = ""
         box.style.color = "black"
         box.style.border = "none"
         box.style.backgroundColor = "white"
     })
+    document.querySelector(".msg-box").classList.add("hideBox")
+    enableButtons()
 }
 
-// click to mark X or O 
+/* click to mark X or O */
 let click = 1
 function start() {
     boxes.forEach((box, index) => {
@@ -65,49 +75,64 @@ function winner() {
                 pos2.innerText === "X" &&
                 pos3.innerText === "X"
             ) {
-                console.log("x is winner")
-                winnerPattern(val[0], val[1], val[2])
                 disableButtons()
+                winnerPattern(val[0], val[1], val[2])
+                displayWinnerX()
             }
-            else if (pos1.innerText === "O" &&
-                pos2.innerText === "O" &&
-                pos3.innerText === "O"
-            ) {
-                console.log("O is winner")
-                winnerPattern(val[0], val[1], val[2])
-                disableButtons()
+            else {
+                if (pos1.innerText === "O" &&
+                    pos2.innerText === "O" &&
+                    pos3.innerText === "O"
+                ) {
+                    disableButtons()
+                    winnerPattern(val[0], val[1], val[2])
+                    displayWinnerO()
+                }
             }
         }
     }
 }
 
+/* to display message container */
+function displayWinnerX() {
+    document.querySelector(".msg-box").classList.remove("hideBox")
+    paragraph.innerText = "X is the Winner ✌️"
+    playAgain()
+}
+
+/* to display message container  */
+function displayWinnerO() {
+    document.querySelector(".msg-box").classList.remove("hideBox")
+    paragraph.innerText = "O is winner ✌️"
+    playAgain()
+}
+
 function isDraw(click) {
-    if(click >= 9) {
+    if (click == 9) {
         disableButtons()
         console.log("Draw")
     }
-    
 }
 
-// to stop marking x or o after finding the winner
+/* to stop marking x or o after finding the winner */
 function disableButtons() {
     for (let box of boxes) {
-        if (box.textContent === "") {
+        if (box.innerText === "") {
             box.disabled = true; // disabled button 
         }
     }
 }
 
-// enable buttons to replay
+/* enable buttons to replay */
 function enableButtons() {
     for (let box of boxes) {
-        if (box.textContent === "") {
+        if (box.innerText === "") {
             box.disabled = false; // disabled button 
         }
     }
 }
 
-// pattern where the winner is found
+/* pattern where the winner is found */
 function winnerPattern(pos1, pos2, pos3) {
     boxes[pos1].style.color = "red"
     boxes[pos2].style.color = "red"
@@ -120,66 +145,9 @@ function winnerPattern(pos1, pos2, pos3) {
     boxes[pos1].style.backgroundColor = "black"
     boxes[pos2].style.backgroundColor = "black"
     boxes[pos3].style.backgroundColor = "black"
-
 }
 
-// reset the values in the cells
-reset.addEventListener("click", resetGame)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-    // TO DO
-
-    1. WHEN THE GAME DRAW THEN WHAT WILL HAPPEN
-    2. DISPLAY OF THE WINNER ON THE SCREEN WHEN THE PLAYER WINS THE GAME
-
-
-*/
-
-
-// color logic //
-/*
-    if(array.innerText === "X") {
-    array.style.backgroundColor="red"
-    } else {
-    array.style.backgroundColor="blue"
-    }
-
-*/
-
-
-// toggle the background color of the second box (index 1)
-// const box = document.querySelectorAll(".box")[1];
-// if (!box) return;
-
-// if (c === 1) {
-//     box.style.backgroundColor = "red";
-//     c = 2;
-// } else {
-//     box.style.backgroundColor = "royalblue";
-//     c = 1;
-// }
-
-
-// querySelectorAll -> returns array called node list with values of html element shares same class //
-/*
-    // Event object (passed in event function parameter)
-
-1. event object has differenct type of method like target, type, key
-2. e.target -> tells which button is clicked
-*/
-
-// boxes = array = nodelist return by querySelectorAll // 
+/* reset game */
+reset.addEventListener("click", () => {
+    resetGame()
+})

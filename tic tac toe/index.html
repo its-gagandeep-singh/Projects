@@ -8,14 +8,15 @@
   </head>
   <body>
     <header>
-      <h1 id="h1">Tic Tac Toe</h1>
+      <div class="msg-box hideBox">
+        <p id="paragraph"></p> <br>
+        <button class="playAgain-btn">Play Again</button>
+      </div>
+
+      <h1 class="headingOne">Tic Tac Toe</h1>
     </header>
 
     <main>
-      <!-- <section> -->
-      <!-- change color theme btn -->
-      <!-- </section> -->
-
       <section>
         <div class="container">
           <div class="content">
@@ -36,13 +37,12 @@
         <div id="field-set-div">
           <fieldset id="fieldset-bottom">
             <legend><h4>Game Options</h4></legend>
-            <button id="reset">Replay</button>
+            <button id="reset">Reset</button>
           </fieldset>
         </div>
       </section>
     </main>
 
     <script src="game.js"></script>
-
   </body>
 </html>
