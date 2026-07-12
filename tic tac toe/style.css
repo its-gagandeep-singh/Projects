@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     background-image: url("https://media.istockphoto.com/id/1025533834/vector/geometric-seamless-pattern-with-black-triangles-crosses-and-circles-on-white-background.jpg");
     background-position: center;  
@@ -10,9 +9,6 @@ body {
     text-align: center;
     font-family: monospace;
 }
-
-
-
 .headingOne {
     background-color: rgb(255, 255, 255, 0.9);
     margin-top: 2vmin;
@@ -20,7 +16,6 @@ body {
     border: 0.5vmin solid black;
     padding: 1vmin 10vmin;
 }
-
 .msg-box {
     width: 80vmin;
     height: 25vmin;
@@ -36,20 +31,15 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .hideBox { /* class may remove later */
     display: none;
 }
-
-
 .playAgain-btn {
     background-color: red;
     color: white;
     border: none;
 }
-
 section { margin: 5.5vmin; }
-
 .container {     
     margin: 0 auto; 
     max-width: 75vmin;
@@ -58,7 +48,6 @@ section { margin: 5.5vmin; }
     justify-content: center;  
     align-items: center;  
 }
-
 .content {
     width: 57vmin;
     height: 57vmin;
@@ -72,7 +61,6 @@ section { margin: 5.5vmin; }
     align-content: center;
     gap: 2.5vmin;
 }
-
 legend {
     color : black;
     font-family: monospace;
@@ -81,7 +69,6 @@ legend {
     background-color: rgba(255, 255, 255, 0.9);   
     border-radius: 3vmin; 
 }
-
 #fieldset-bottom {
     width: 55vmin;
     padding: 3vmin;
@@ -91,14 +78,12 @@ legend {
     display: flex;
     justify-content: center;
 }
-
 #field-set-div {
     text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 button {
     background-color: black;
     color: white;
@@ -108,7 +93,6 @@ button {
     font-size: 2.7vmin;
     border-radius: 1vmin;
 }
-
 .box {
     width: 14vmin;
     background-color: white;
