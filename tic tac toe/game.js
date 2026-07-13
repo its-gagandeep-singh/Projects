@@ -33,7 +33,7 @@ function resetGame() {
         box.style.backgroundColor = "white"
     })
     document.querySelector(".msg-box").classList.add("hideBox")
-    
+    enableButtons()
 }
 
 /* click to mark X or O */
@@ -51,7 +51,7 @@ function start() {
                         playerValue = true
                     }
                 }
-                winner()
+                winner(click)
                 isDraw(click)
                 click++
             }
@@ -79,8 +79,7 @@ function winner() {
                 winnerPattern(val[0], val[1], val[2])
                 displayWinnerX()
             }
-            else {
-                if (pos1.innerText === "O" &&
+            else if (pos1.innerText === "O" &&
                     pos2.innerText === "O" &&
                     pos3.innerText === "O"
                 ) {
@@ -91,7 +90,7 @@ function winner() {
             }
         }
     }
-}
+
 
 /* to display message container */
 function displayWinnerX() {
