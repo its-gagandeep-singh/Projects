@@ -92,7 +92,10 @@ button {
     height: 4.5vmin;
     font-size: 2.7vmin;
     border-radius: 1vmin;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
 }
 .box {
     width: 14vmin;
@@ -104,6 +107,9 @@ button {
     text-align: center;
     box-shadow: 0vmin 0vmin 4.5vmin rgb(0, 0, 0);
     color: black;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
 }
 
