@@ -51,7 +51,7 @@ function start() {
                         playerValue = true
                     }
                 }
-                winner(click)
+                winner()
                 isDraw(click)
                 click++
             }
@@ -68,28 +68,22 @@ function winner() {
         let pos3 = boxes[val[2]];
 
         if (pos1.innerText !== "" &&
-            pos2.innerText !== "" &&
-            pos3.innerText !== ""
-        ) {
-            if (pos1.innerText === "X" &&
-                pos2.innerText === "X" &&
-                pos3.innerText === "X"
-            ) {
+            pos1.innerText == pos2.innerText && pos2.innerText == pos3.innerText ) {
+            if (pos1.innerText === "X") {
                 disableButtons()
                 winnerPattern(val[0], val[1], val[2])
                 displayWinnerX()
             }
-            else if (pos1.innerText === "O" &&
-                    pos2.innerText === "O" &&
-                    pos3.innerText === "O"
-                ) {
-                    disableButtons()
-                    winnerPattern(val[0], val[1], val[2])
-                    displayWinnerO()
-                }
+            else  {
+                disableButtons()
+                winnerPattern(val[0], val[1], val[2])
+                displayWinnerO()
             }
-        }
+            return true;
+        } 
     }
+    return false;
+}
 
 
 /* to display message container */
@@ -123,14 +117,14 @@ function isDraw(click) {
 /* to stop marking x or o after finding the winner */
 function disableButtons() {
     for (let box of boxes) {
-            box.disabled = true; // enable button 
+        box.disabled = true; // enable button 
     }
 }
 
 /* enable buttons to replay */
 function enableButtons() {
     for (let box of boxes) {
-            box.disabled = false; // disable button 
+        box.disabled = false; // disable button 
     }
 }
 
