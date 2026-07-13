@@ -14,13 +14,3 @@ A classic, interactive, responsive Tic Tac Toe game built using core web technol
     *   Responsive design optimized for both mobile and desktop screens.
     *   Interactive grid layout using responsive viewport sizing (`vmin`).
 *   **Live Demo:** [View Live Site](https://tictactoe-game-lac.vercel.app/) *(Update this link once deployed)*
-
----
-
-## 🛠️ Installation & Local Setup
-
-If you want to run any of these projects locally on your computer, follow these simple steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/its-gagandeep-singh/Projects.git](https://github.com/its-gagandeep-singh/Projects.git)
