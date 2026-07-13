@@ -4,7 +4,7 @@ A clean, responsive, and interactive classic Tic-Tac-Toe game built from scratch
 
 ## 🚀 Live Demo
 
-Check out the live application here: **[Live Demo Link](https://lnkd.in/g2M2WfuK)**
+Check out the live application here: **[Live Demo Link](https://tictactoe-game-lac.vercel.app/)**
 
 ---
 
