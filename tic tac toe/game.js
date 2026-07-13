@@ -104,7 +104,7 @@ function displayWinnerO() {
 function displayDraw() {
     document.querySelector(".msg-box").classList.remove("hideBox")
     paragraph.innerText = "This Game is a Draw !"
-    playAgain()
+    playAgain() 
 }
 
 /* Check if game is dray */
@@ -144,7 +144,7 @@ function winnerPattern(pos1, pos2, pos3) {
     boxes[pos3].style.backgroundColor = "black"
 }
 
-/* reset game */
+/* to reset game */
 reset.addEventListener("click", () => {
     resetGame()
 })
