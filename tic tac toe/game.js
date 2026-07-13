@@ -33,7 +33,7 @@ function resetGame() {
         box.style.backgroundColor = "white"
     })
     document.querySelector(".msg-box").classList.add("hideBox")
-    enableButtons()
+    
 }
 
 /* click to mark X or O */
@@ -124,18 +124,14 @@ function isDraw(click) {
 /* to stop marking x or o after finding the winner */
 function disableButtons() {
     for (let box of boxes) {
-        if (box.innerText === "") {
-            box.disabled = true; // disabled button 
-        }
+            box.disabled = true; // enable button 
     }
 }
 
 /* enable buttons to replay */
 function enableButtons() {
     for (let box of boxes) {
-        if (box.innerText === "") {
-            box.disabled = false; // disabled button 
-        }
+            box.disabled = false; // disable button 
     }
 }
 
@@ -159,4 +155,4 @@ reset.addEventListener("click", () => {
     resetGame()
 })
 
-
+/*  */
