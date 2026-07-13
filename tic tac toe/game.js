@@ -1,9 +1,6 @@
 const boxes = document.querySelectorAll(".box")
 const reset = document.getElementById("reset")
-<<<<<<< HEAD
 const paragraph = document.getElementById("paragraph")
-=======
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
 let playerValue = true;
 
 const pattern = [
@@ -54,16 +51,11 @@ function start() {
                         playerValue = true
                     }
                 }
-<<<<<<< HEAD
                 let findWinner = winner()
 
                 if (!findWinner) {
                     isDraw(click)
                 }
-=======
-                winner()
-                isDraw(click)
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
                 click++
             }
         })
@@ -79,7 +71,6 @@ function winner() {
         let pos3 = boxes[val[2]];
 
         if (pos1.innerText !== "" &&
-<<<<<<< HEAD
             pos1.innerText == pos2.innerText && pos2.innerText == pos3.innerText) {
             if (pos1.innerText === "X") {
                 displayWinnerX()
@@ -96,33 +87,6 @@ function winner() {
 }
 
 
-=======
-            pos2.innerText !== "" &&
-            pos3.innerText !== ""
-        ) {
-            if (pos1.innerText === "X" &&
-                pos2.innerText === "X" &&
-                pos3.innerText === "X"
-            ) {
-                disableButtons()
-                winnerPattern(val[0], val[1], val[2])
-                displayWinnerX()
-            }
-            else {
-                if (pos1.innerText === "O" &&
-                    pos2.innerText === "O" &&
-                    pos3.innerText === "O"
-                ) {
-                    disableButtons()
-                    winnerPattern(val[0], val[1], val[2])
-                    displayWinnerO()
-                }
-            }
-        }
-    }
-}
-
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
 /* to display message container */
 function displayWinnerX() {
     document.querySelector(".msg-box").classList.remove("hideBox")
@@ -140,11 +104,7 @@ function displayWinnerO() {
 function displayDraw() {
     document.querySelector(".msg-box").classList.remove("hideBox")
     paragraph.innerText = "This Game is a Draw !"
-<<<<<<< HEAD
     playAgain() 
-=======
-    playAgain()
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
 }
 
 /* Check if game is dray */
@@ -158,26 +118,14 @@ function isDraw(click) {
 /* to stop marking x or o after finding the winner */
 function disableButtons() {
     for (let box of boxes) {
-<<<<<<< HEAD
         box.disabled = true; // enable button 
-=======
-        if (box.innerText === "") {
-            box.disabled = true; // disabled button 
-        }
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
     }
 }
 
 /* enable buttons to replay */
 function enableButtons() {
     for (let box of boxes) {
-<<<<<<< HEAD
         box.disabled = false; // disable button 
-=======
-        if (box.innerText === "") {
-            box.disabled = false; // disabled button 
-        }
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
     }
 }
 
@@ -196,16 +144,8 @@ function winnerPattern(pos1, pos2, pos3) {
     boxes[pos3].style.backgroundColor = "black"
 }
 
-<<<<<<< HEAD
 /* to reset game */
-=======
-/* reset game */
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
 reset.addEventListener("click", () => {
     resetGame()
 })
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 45042227be156ea69d760a3592751eac1e72dd99
