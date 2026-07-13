@@ -51,8 +51,11 @@ function start() {
                         playerValue = true
                     }
                 }
-                winner()
-                isDraw(click)
+                let findWinner = winner()
+
+                if (!findWinner) {
+                    isDraw(click)
+                }
                 click++
             }
         })
@@ -68,19 +71,17 @@ function winner() {
         let pos3 = boxes[val[2]];
 
         if (pos1.innerText !== "" &&
-            pos1.innerText == pos2.innerText && pos2.innerText == pos3.innerText ) {
+            pos1.innerText == pos2.innerText && pos2.innerText == pos3.innerText) {
             if (pos1.innerText === "X") {
-                disableButtons()
-                winnerPattern(val[0], val[1], val[2])
                 displayWinnerX()
             }
-            else  {
-                disableButtons()
-                winnerPattern(val[0], val[1], val[2])
+            else {
                 displayWinnerO()
             }
+            disableButtons()
+            winnerPattern(val[0], val[1], val[2])
             return true;
-        } 
+        }
     }
     return false;
 }
@@ -148,4 +149,3 @@ reset.addEventListener("click", () => {
     resetGame()
 })
 
-/*  */
